@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+  <classPathEntry location="D:\maven_idea\mysql\mysql-connector-java\5.1.44\mysql-connector-java-5.1.44.jar" />
+  <!--<context id="mbgTables" targetRuntime="MyBatis3">-->
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+
+    <plugin type="org.mybatis.generator.plugins.MapperAnnotationPlugin"></plugin>
+    <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
+    <commentGenerator>
+      <property name="suppressAllComments" value="true"/>
+    </commentGenerator>
+
+     <!--数据库连接的信息：驱动类、连接地址、用户名、密码 -->
+    <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                    connectionURL="jdbc:mysql://127.0.0.1:3306/myapi"
+                    userId="root"
+                    password="root">
+    </jdbcConnection>
+
+      <!-- 默认false，把JDBC decimal（十进小数） 和 numeric 类型解析为 Integer，
+             true时，把JDBC decimal 和 numeric 类型解析为java.math.BigDecimal
+       numeric(5,2) 是总位数为5，小数点后为2位的数   236.23
+       numeric 的功能相当于 decimal(Decimal类型消除了发生在各种浮点运算中的舍入误差)
+     -->
+    <javaTypeResolver>
+      <property name="forceBigDecimals" value="false"/>
+    </javaTypeResolver>
+
+      <!-- targetProject:生成实体类的位置 -->
+      <!-- api  com.htsec.rsrv.authority.model
+      com.fbtest.model
+      -->
+    <javaModelGenerator targetPackage=" com.fbtest.model" targetProject="mbg/output/">
+      <!-- 如果false就会直接用targetPackage属性。默认为false -->
+      <property name="enableSubPackages" value="true"/>
+      <property name="trimStrings" value="true"/>
+    </javaModelGenerator>
+
+      <!-- targetProject:mapper映射文件生成的位置 -->
+    <sqlMapGenerator targetPackage="mapper" targetProject="mbg/output/">
+      <property name="enableSubPackages" value="true"/>
+    </sqlMapGenerator>
+
+      <!-- targetPackage：mapper接口生成的位置 -->
+      <!-- api  com.htsec.rsrv.authority.mapper.autogen
+      com.fbtest.mapper.autogen  -->
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.fbtest.mapper.autogen" targetProject="mbg/output/">
+      <property name="enableSubPackages" value="true"/>
+    </javaClientGenerator>
+
+      <!-- 指定数据库表 -->
+    <table tableName="t_auth_user"
+           enableSelectByExample="true"
+           enableDeleteByExample="true"
+           enableCountByExample="true"
+           enableUpdateByExample="true">
+      <generatedKey sqlStatement="Mysql" column="id" identity="true" ></generatedKey>
+    </table>
+
+      <table tableName="t_auth_role"
+             enableSelectByExample="true"
+             enableDeleteByExample="true"
+             enableCountByExample="true"
+             enableUpdateByExample="true">
+        <generatedKey sqlStatement="Mysql" column="id" identity="true" ></generatedKey>
+      </table>
+
+      <table tableName="t_auth_resource"
+             enableSelectByExample="true"
+             enableDeleteByExample="true"
+             enableCountByExample="true"
+             enableUpdateByExample="true">
+        <generatedKey sqlStatement="Mysql" column="id" identity="true" ></generatedKey>
+      </table>
+  </context>
+</generatorConfiguration>

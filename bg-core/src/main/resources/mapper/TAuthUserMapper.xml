@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fbtest.mapper.autogen.TAuthUserMapper">
+  <resultMap id="BaseResultMap" type=" com.fbtest.model.TAuthUser">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="employee_no" jdbcType="VARCHAR" property="employeeNo" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="user_email" jdbcType="VARCHAR" property="userEmail" />
+    <result column="user_phone" jdbcType="VARCHAR" property="userPhone" />
+    <result column="user_gender" jdbcType="CHAR" property="userGender" />
+    <result column="user_head_image" jdbcType="VARCHAR" property="userHeadImage" />
+    <result column="status" jdbcType="VARCHAR" property="status" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="last_login_ip" jdbcType="VARCHAR" property="lastLoginIp" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="dep_id" jdbcType="INTEGER" property="depId" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_auth_user
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.fbtest.model.TAuthUser">
+    <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
+      SELECT LAST_INSERT_ID()
+    </selectKey>
+    insert into t_auth_user (employee_no, name, user_email, 
+      user_phone, user_gender, user_head_image, 
+      status, password, remark, 
+      last_login_ip, last_login_time, create_time, 
+      update_time, dep_id)
+    values (#{employeeNo,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, #{userEmail,jdbcType=VARCHAR}, 
+      #{userPhone,jdbcType=VARCHAR}, #{userGender,jdbcType=CHAR}, #{userHeadImage,jdbcType=VARCHAR}, 
+      #{status,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, 
+      #{lastLoginIp,jdbcType=VARCHAR}, #{lastLoginTime,jdbcType=TIMESTAMP}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP}, #{depId,jdbcType=INTEGER})
+  </insert>
+  <update id="updateByPrimaryKey" parameterType=" com.fbtest.model.TAuthUser">
+    update t_auth_user
+    set employee_no = #{employeeNo,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      user_email = #{userEmail,jdbcType=VARCHAR},
+      user_phone = #{userPhone,jdbcType=VARCHAR},
+      user_gender = #{userGender,jdbcType=CHAR},
+      user_head_image = #{userHeadImage,jdbcType=VARCHAR},
+      status = #{status,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      last_login_ip = #{lastLoginIp,jdbcType=VARCHAR},
+      last_login_time = #{lastLoginTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      dep_id = #{depId,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, employee_no, name, user_email, user_phone, user_gender, user_head_image, 
+    status, password, remark, last_login_ip, last_login_time, create_time, update_time, 
+    dep_id
+    from t_auth_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, employee_no, name, user_email, user_phone, user_gender, user_head_image, 
+    status, password, remark, last_login_ip, last_login_time, create_time, update_time, 
+    dep_id
+    from t_auth_user
+  </select>
+</mapper>
