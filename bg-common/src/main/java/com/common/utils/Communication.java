@@ -40,7 +40,7 @@ public class Communication {
 
 	/*
 	 * MQ全局变量
-	 */
+
 	private static MQQueueManager qManager = null;
 	private static MQQueue sendQueue = null;
 	private static MQPutMessageOptions sendOption = null;
@@ -48,7 +48,9 @@ public class Communication {
 	private static MQQueue receiveQueue = null;
 	private static MQGetMessageOptions receiveOption = null;
 	private static int receiveOpenOption = 0;
-	
+	 */
+
+
 	/**
 	 * Socket通讯发送约束数据
 	 * 发送的数据是分批次发送,循环发送1024字节数据。
@@ -389,7 +391,7 @@ public class Communication {
 		return null;
 	}
 	
-	/**
+	/*
 	 * 发送IBMMQ
 	 * @param ip MQ所在主机的ip
 	 * @param port MQ所在主机的端口
@@ -400,7 +402,7 @@ public class Communication {
 	 * @param channel 渠道
 	 * @param ccsid 编码字符集
 	 * @return String 返回String类型返回报文
-	 */
+
 	private String sendIBMMq(String ip, int port, String sendMessage, String _mqManager, String _sendQueue, String _receiveQueue, String channel, int ccsid, String enconding) {
 		try {
 			MQEnvironment.hostname = ip;
@@ -432,10 +434,10 @@ public class Communication {
 		}
 		return null;
 	}
-	
-	/**
-	 * MQ关流
 	 */
+	/*
+	 * MQ关流
+
 	private void destory() {
 		try {
 			if (sendQueue != null) {
@@ -459,15 +461,15 @@ public class Communication {
 			e.printStackTrace();
 		}
 	}
-
-	/**
+	 */
+	/*
 	 * MQ发送方法
 	 * @param sendMessage 发送报文
 	 * @param _mqManager 队列管理器
 	 * @param _receiveQueue 接受队列
 	 * @param encoding 发送报文编码格式
 	 * @return byte[] 返回byte[]
-	 */
+
 	private byte[] mqsend(String sendMessage, String _mqManager, String _receiveQueue, String encoding) {
 		try {
 			byte[] sendData;
@@ -494,12 +496,12 @@ public class Communication {
 		}
 		return null;
 	}
-
-	/**
+	 */
+	/*
 	 * MQ返回方法
 	 * @param mesId messageId
 	 * @return String 返回String类型返回报文
-	 */
+
 	private String returnMessage(byte[] mesId) {
 		try {
 			MQGetMessageOptions gmo = new MQGetMessageOptions();
@@ -520,7 +522,7 @@ public class Communication {
 		}
 		return null;
 	}
-	
+	 */
 	/**
 	 * 发送webService
 	 * @param url
@@ -836,7 +838,7 @@ public class Communication {
 			String channel = properties.getProperty("channel");
 			
 			// 发送IBMMQ
-			returnMessage = this.sendIBMMq(ip, port, (String)sendMessage, _mqManager, _sendQueue, _receiveQueue, channel, ccsid, encoding);
+			//returnMessage = this.sendIBMMq(ip, port, (String)sendMessage, _mqManager, _sendQueue, _receiveQueue, channel, ccsid, encoding);
 		} else if ("WebService".equalsIgnoreCase(type)) {
 			// ip地址
 			String url = properties.getProperty("url");

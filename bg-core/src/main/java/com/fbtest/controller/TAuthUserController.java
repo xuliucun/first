@@ -1,7 +1,5 @@
 package com.fbtest.controller;
 
-
-import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fbtest.model.TAuthUser;
 import com.fbtest.service.TAuthUserService;
 import com.fbtest.util.JsonUtils;
