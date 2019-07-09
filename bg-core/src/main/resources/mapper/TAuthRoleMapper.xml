@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fbtest.mapper.autogen.TAuthRoleMapper">
-  <resultMap id="BaseResultMap" type=" com.fbtest.model.TAuthRole">
+  <resultMap id="BaseResultMap" type="com.fbtest.model.TAuthRole">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="code" jdbcType="VARCHAR" property="code" />
     <result column="name" jdbcType="VARCHAR" property="name" />
@@ -26,7 +26,7 @@
       #{status,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
       #{updateTime,jdbcType=TIMESTAMP})
   </insert>
-  <update id="updateByPrimaryKey" parameterType=" com.fbtest.model.TAuthRole">
+  <update id="updateByPrimaryKey" parameterType="com.fbtest.model.TAuthRole">
     update t_auth_role
     set code = #{code,jdbcType=VARCHAR},
       name = #{name,jdbcType=VARCHAR},

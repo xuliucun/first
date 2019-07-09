@@ -1,7 +1,19 @@
 server:
   port: 8082
   context-path: /bgroot
-
+#开发配置
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myapi
+    username: root
+    password: root
+    # 使用druid数据源
+    #type: com.alibaba.druid.pool.DruidDataSource
+#公共配置与profiles选择无关 mapperLocations指的路径是src/main/resources
+mybatis:
+  typeAliasesPackage: com.fbtest.mapper.autogen
+  mapperLocations: classpath:mapper/*.xml
 #spring.thymeleaf.cache = true ＃启用模板缓存。
 #spring.thymeleaf.check-template = true ＃在呈现模板之前检查模板是否存在。
 #spring.thymeleaf.check-template-location = true ＃检查模板位置是否存在。
@@ -25,12 +37,6 @@ server:
 #    suffix: .html
 #    encoding: utf-8
 #    cache: false
-spring:
-    datasource:
-      driverClassName: com.mysql.jdbc.Driver
-      url: jdbc:mysql://127.0.0.1:3306/myapi?characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
-      username: root
-      password: root
-      maxActive: 20
+
 
 

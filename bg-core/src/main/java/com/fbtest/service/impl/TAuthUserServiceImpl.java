@@ -6,9 +6,11 @@ import com.fbtest.service.TAuthUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
+
 @Service
 public class TAuthUserServiceImpl implements TAuthUserService {
-    @Autowired
+    @Resource
     private TAuthUserMapper tAuthUserMapper;
 
     public boolean addUser(TAuthUser user) {

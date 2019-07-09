@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="bg-app" />
+        <module name="bg-common" />
+        <module name="bg-core" />
         <module name="bgapp" />
         <module name="bgcommon" />
         <module name="bgcore" />

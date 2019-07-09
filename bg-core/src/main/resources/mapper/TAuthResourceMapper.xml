@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fbtest.mapper.autogen.TAuthResourceMapper">
-  <resultMap id="BaseResultMap" type=" com.fbtest.model.TAuthResource">
+  <resultMap id="BaseResultMap" type="com.fbtest.model.TAuthResource">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="verb" jdbcType="VARCHAR" property="verb" />
     <result column="uri_pattern" jdbcType="VARCHAR" property="uriPattern" />
@@ -21,7 +21,7 @@
     values (#{verb,jdbcType=VARCHAR}, #{uriPattern,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR}, 
       #{remark,jdbcType=VARCHAR})
   </insert>
-  <update id="updateByPrimaryKey" parameterType=" com.fbtest.model.TAuthResource">
+  <update id="updateByPrimaryKey" parameterType="com.fbtest.model.TAuthResource">
     update t_auth_resource
     set verb = #{verb,jdbcType=VARCHAR},
       uri_pattern = #{uriPattern,jdbcType=VARCHAR},
