@@ -143,6 +143,7 @@
         <module>bg-core</module>
         <module>bg-app</module>
         <module>bg-common</module>
+        <module>bg-sso</module>
     </modules>
 
 

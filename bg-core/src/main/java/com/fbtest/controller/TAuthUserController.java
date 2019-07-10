@@ -5,14 +5,12 @@ import com.fbtest.service.TAuthUserService;
 import com.fbtest.util.JsonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
 /**
  * restful api
  * */
-@Controller
+@RestController
 @RequestMapping("/user")
 public class TAuthUserController {
     @Autowired
@@ -27,7 +25,7 @@ public class TAuthUserController {
 
 
     @RequestMapping(method = RequestMethod.POST)
-    public String saveUser(TAuthUser user){
+    public String saveUser(@RequestBody TAuthUser user){
 
         if (tAuthUserService.addUser(user)){
             return "{\"code\":\"成功\"}";
@@ -37,7 +35,7 @@ public class TAuthUserController {
     }
 
     @RequestMapping(method = RequestMethod.PUT)
-    public String updateUser(TAuthUser user){
+    public String updateUser(@RequestBody TAuthUser user){
         tAuthUserService.modifyUser(user);
         return "";
     }

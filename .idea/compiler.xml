@@ -9,9 +9,11 @@
         <module name="bg-app" />
         <module name="bg-common" />
         <module name="bg-core" />
+        <module name="bg-sso" />
         <module name="bgapp" />
         <module name="bgcommon" />
         <module name="bgcore" />
+        <module name="bgsso" />
       </profile>
     </annotationProcessing>
   </component>

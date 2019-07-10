@@ -3,15 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="35cd07c3-238c-4376-9d98-3e587bde4e9e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bg-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bg-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/BootstrapApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/BootstrapApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/service/impl/TAuthUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/service/impl/TAuthUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg-core/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/bg-core/src/main/resources/application-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthResourceMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthResourceMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthRoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthRoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bg-core/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -21,6 +16,7 @@
     <ignored path="$PROJECT_DIR$/bg-common/target/" />
     <ignored path=".idea" />
     <ignored path=".idea/vcs.xml" />
+    <ignored path="$PROJECT_DIR$/bg-sso/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,20 +27,14 @@
   <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="TAuthUserMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/mapper/autogen/TAuthUserMapper.java">
+      <file leaf-file-name="TAuthUserControllerTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bg-core/src/test/java/com/bgtest/TAuthUserControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TAuthUserMapper.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthUserMapper.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-251">
-              <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+            <state relative-caret-position="255">
+              <caret line="66" column="17" selection-start-line="64" selection-start-column="8" selection-end-line="66" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,77 +42,11 @@
       <file leaf-file-name="TAuthUserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="22" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1076">
-              <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bg-core/src/main/resources/application.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-dev.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bg-core/src/main/resources/application-dev.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application-pro.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bg-core/src/main/resources/application-pro.yml">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="100">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BootstrapApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/BootstrapApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TAuthUserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/service/impl/TAuthUserServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <caret line="37" column="51" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bg-core/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -160,11 +84,9 @@
         <option value="$PROJECT_DIR$/bg-core/mbg/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/mapper/autogen/TAuthResourceMapper.java" />
         <option value="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/vo/BaseVO.java" />
-        <option value="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java" />
         <option value="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/service/TAuthUserService.java" />
         <option value="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/util/JsonUtils.java" />
         <option value="$PROJECT_DIR$/docs/pom详解.xml" />
-        <option value="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java" />
         <option value="$PROJECT_DIR$/bg-core/src/main/resources/application-pro.yml" />
         <option value="$PROJECT_DIR$/bg-common/pom.xml" />
         <option value="$PROJECT_DIR$/bg-common/src/main/java/com/common/utils/Communication.java" />
@@ -174,11 +96,15 @@
         <option value="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthResourceMapper.xml" />
         <option value="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthRoleMapper.xml" />
         <option value="$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthUserMapper.xml" />
-        <option value="$PROJECT_DIR$/bg-core/pom.xml" />
-        <option value="$PROJECT_DIR$/bg-core/pom.xml" />
         <option value="$PROJECT_DIR$/bg-core/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/bg-core/src/main/resources/application-dev.yml" />
         <option value="$PROJECT_DIR$/bg-core/pom.xml" />
+        <option value="$PROJECT_DIR$/bg-core/pom.xml" />
+        <option value="$PROJECT_DIR$/bg-core/pom.xml" />
+        <option value="$PROJECT_DIR$/bg-core/src/test/java/com/bgtest/ControllerTest.java" />
+        <option value="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java" />
+        <option value="$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java" />
+        <option value="$PROJECT_DIR$/bg-core/src/test/java/com/bgtest/TAuthUserControllerTest.java" />
       </list>
     </option>
   </component>
@@ -198,17 +124,7 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bg-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="bg-core" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
@@ -216,8 +132,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="103" />
-    <option name="y" value="129" />
+    <option name="x" value="20" />
+    <option name="y" value="97" />
     <option name="width" value="1400" />
     <option name="height" value="694" />
   </component>
@@ -229,7 +145,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -288,34 +204,43 @@
               <item name="bg-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fbtest" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bgroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bgroot" type="462c0819:PsiDirectoryNode" />
-              <item name="bg-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="fbtest" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="bgroot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="bgroot" type="462c0819:PsiDirectoryNode" />
-              <item name="bg-core" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bgroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bgroot" type="462c0819:PsiDirectoryNode" />
+              <item name="bg-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bgroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bgroot" type="462c0819:PsiDirectoryNode" />
+              <item name="bg-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bgroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bgroot" type="462c0819:PsiDirectoryNode" />
+              <item name="bg-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="bgtest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="bgroot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="bgroot" type="462c0819:PsiDirectoryNode" />
+              <item name="bg-core" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -328,7 +253,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myspringbootmybatis" />
+    <property name="last_opened_file_path" value="D:/IdeaProjects/endpoint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -341,11 +266,11 @@
       <recent name="com.fbtest" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ideatest\bgroot\bg-core\src\test\java\com\bgtest" />
       <recent name="D:\IdeaProjects\bgroot\bg-core\src\main\resources" />
       <recent name="D:\IdeaProjects\bgroot\docs" />
       <recent name="D:\IdeaProjects\bgroot\bg-common\src\main\java" />
       <recent name="D:\IdeaProjects\bgroot\bg-core\src\main\java" />
-      <recent name="D:\IdeaProjects\bgroot\bg-core" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -360,9 +285,78 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BootstrapApplication (1)">
+  <component name="RunManager" selected="JUnit.TAuthUserControllerTest.addUser">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ControllerTest.getHello" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bg-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bgtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bgtest" />
+      <option name="MAIN_CLASS_NAME" value="com.bgtest.ControllerTest" />
+      <option name="METHOD_NAME" value="getHello" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TAuthUserControllerTest.addUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bg-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bgtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bgtest" />
+      <option name="MAIN_CLASS_NAME" value="com.bgtest.TAuthUserControllerTest" />
+      <option name="METHOD_NAME" value="addUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="TAuthUserControllerTest.queryUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bg-core" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bgtest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.bgtest" />
+      <option name="MAIN_CLASS_NAME" value="com.bgtest.TAuthUserControllerTest" />
+      <option name="METHOD_NAME" value="queryUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -379,6 +373,16 @@
         <value defaultName="singleModule" />
       </option>
       <patterns />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
     </configuration>
     <configuration name="BootstrapApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="bg-core" />
@@ -425,9 +429,15 @@
     <list>
       <item itemvalue="Spring Boot.BootstrapApplication" />
       <item itemvalue="Spring Boot.BootstrapApplication (1)" />
+      <item itemvalue="JUnit.ControllerTest.getHello" />
+      <item itemvalue="JUnit.TAuthUserControllerTest.queryUserById" />
+      <item itemvalue="JUnit.TAuthUserControllerTest.addUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TAuthUserControllerTest.addUser" />
+        <item itemvalue="JUnit.TAuthUserControllerTest.queryUserById" />
+        <item itemvalue="JUnit.ControllerTest.getHello" />
         <item itemvalue="Spring Boot.BootstrapApplication (1)" />
         <item itemvalue="Spring Boot.BootstrapApplication" />
       </list>
@@ -446,7 +456,8 @@
       <workItem from="1562050356360" duration="20026000" />
       <workItem from="1562217354284" duration="10641000" />
       <workItem from="1562548145789" duration="24177000" />
-      <workItem from="1562652668586" duration="1693000" />
+      <workItem from="1562652668586" duration="3698000" />
+      <workItem from="1562746477957" duration="3993000" />
     </task>
     <task id="LOCAL-00001" summary="提交">
       <created>1562573370048</created>
@@ -462,19 +473,55 @@
       <option name="project" value="LOCAL" />
       <updated>1562580485612</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="提交">
+      <created>1562654565696</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562654565696</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="ControllerTest_getHello - 2019.07.10 at 16h 28m 30s.xml">
+      <configuration name="ControllerTest.getHello" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ControllerTest_getHello - 2019.07.10 at 16h 35m 26s.xml">
+      <configuration name="ControllerTest.getHello" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TAuthUserControllerTest_queryUserById - 2019.07.10 at 16h 43m 23s.xml">
+      <configuration name="TAuthUserControllerTest.queryUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TAuthUserControllerTest_queryUserById - 2019.07.10 at 16h 44m 33s.xml">
+      <configuration name="TAuthUserControllerTest.queryUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TAuthUserControllerTest_queryUserById - 2019.07.10 at 16h 46m 04s.xml">
+      <configuration name="TAuthUserControllerTest.queryUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TAuthUserControllerTest_queryUserById - 2019.07.10 at 16h 48m 57s.xml">
+      <configuration name="TAuthUserControllerTest.queryUserById" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TAuthUserControllerTest_addUser - 2019.07.10 at 17h 06m 15s.xml">
+      <configuration name="TAuthUserControllerTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TAuthUserControllerTest_addUser - 2019.07.10 at 17h 08m 02s.xml">
+      <configuration name="TAuthUserControllerTest.addUser" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TAuthUserControllerTest_addUser - 2019.07.10 at 17h 15m 23s.xml">
+      <configuration name="TAuthUserControllerTest.addUser" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56537000" />
+    <option name="totallyTimeSpent" value="62535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50192803" side_tool="true" weight="0.39972898" />
-      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.17930591" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50192803" side_tool="true" weight="0.27235773" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.17930591" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -489,11 +536,11 @@
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49807197" weight="0.37127373" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49871466" weight="0.27371272" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49807197" weight="0.26558265" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49807197" visible="true" weight="0.24119242" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.3292683" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3292683" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20886889" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21529563" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -543,8 +590,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bg-core/mbg/output/com/fbtest/mapper/autogen/TAuthDepartmentMapper.java" />
-    <entry file="file://$PROJECT_DIR$/bg-core/mbg/output/com/fbtest/model/TAuthDepartment.java" />
     <entry file="file://$PROJECT_DIR$/bg-core/mbg/output/com/fbtest/model/TAuthDepartmentExample.java" />
     <entry file="file://$PROJECT_DIR$/bg-core/mbg/output/mapper/TAuthDepartmentMapper.xml" />
     <entry file="file://$PROJECT_DIR$/bg-common/bgcommon.iml">
@@ -586,13 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bg-core/mbg/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/model/TAuthUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
@@ -624,6 +662,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-37">
           <caret line="39" column="32" lean-forward="true" selection-start-line="39" selection-start-column="32" selection-end-line="39" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -662,24 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bg-common/src/main/java/com/common/utils/Communication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="428" column="31" selection-start-line="428" selection-start-column="31" selection-end-line="428" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bg-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="28" column="36" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/service/TAuthUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -718,19 +745,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -755,37 +769,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/mapper/autogen/TAuthUserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="12" column="45" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-251">
-          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/service/impl/TAuthUserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/BootstrapApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bg-core/src/main/resources/application-pro.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -795,7 +778,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/bg-core/src/main/resources/application-dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
+        <state relative-caret-position="375">
           <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
@@ -807,17 +790,99 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/BootstrapApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-core/src/main/resources/mapper/TAuthUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="39" column="49" selection-start-line="39" selection-start-column="49" selection-end-line="39" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-core/mbg/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1025">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-common/src/main/java/com/common/utils/Communication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10000">
+          <caret line="428" column="31" selection-start-line="428" selection-start-column="31" selection-end-line="428" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1076">
+        <state relative-caret-position="25">
           <caret line="84" column="24" selection-start-line="84" selection-start-column="24" selection-end-line="84" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-sso/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bg-core/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="170" column="20" selection-start-line="170" selection-start-column="20" selection-end-line="170" selection-end-column="20" />
+        <state relative-caret-position="-500">
+          <caret line="103" selection-start-line="103" selection-end-line="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/service/TAuthUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/service/impl/TAuthUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/mapper/autogen/TAuthUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-core/src/main/java/com/fbtest/controller/TAuthUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="37" column="51" selection-start-line="37" selection-start-column="42" selection-end-line="37" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bg-core/src/test/java/com/bgtest/TAuthUserControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="66" column="17" selection-start-line="64" selection-start-column="8" selection-end-line="66" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
