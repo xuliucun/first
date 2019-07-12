@@ -1,8 +1,8 @@
 package com.xulctest.config;
 
 
-import com.gf.entity.RolePermisson;
-import com.gf.mapper.PermissionMapper;
+import com.xulctest.entity.RolePermisson;
+import com.xulctest.mapper.PermissionMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.ConfigAttribute;
 import org.springframework.security.access.SecurityConfig;

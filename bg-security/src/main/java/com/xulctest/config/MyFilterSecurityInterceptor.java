@@ -9,11 +9,7 @@ import org.springframework.security.web.FilterInvocation;
 import org.springframework.security.web.access.intercept.FilterInvocationSecurityMetadataSource;
 import org.springframework.stereotype.Component;
 
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
+import javax.servlet.*;
 import java.io.IOException;
 
 
@@ -31,10 +27,20 @@ public class MyFilterSecurityInterceptor extends AbstractSecurityInterceptor imp
 
 
     @Override
+    public void init(FilterConfig filterConfig) throws ServletException {
+
+    }
+
+    @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
         FilterInvocation fi = new FilterInvocation(servletRequest, servletResponse, filterChain);
         invoke(fi);
+    }
+
+    @Override
+    public void destroy() {
+
     }
 
     public void invoke(FilterInvocation fi) throws IOException, ServletException {

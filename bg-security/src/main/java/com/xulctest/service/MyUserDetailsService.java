@@ -1,11 +1,11 @@
 package com.xulctest.service;
 
 
-import com.gf.entity.Role;
-import com.gf.entity.User;
 
-import com.gf.mapper.RoleMapper;
-import com.gf.mapper.UserMapper;
+import com.xulctest.entity.Role;
+import com.xulctest.entity.User;
+import com.xulctest.mapper.RoleMapper;
+import com.xulctest.mapper.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

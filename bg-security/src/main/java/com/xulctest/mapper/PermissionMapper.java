@@ -1,7 +1,7 @@
 package com.xulctest.mapper;
 
-import com.gf.entity.Role;
-import com.gf.entity.RolePermisson;
+
+import com.xulctest.entity.RolePermisson;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
