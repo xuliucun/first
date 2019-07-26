@@ -1,8 +1,10 @@
 package com.bgtest;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fbtest.BootstrapApplication;
 import com.fbtest.model.TAuthUser;
+import com.fbtest.service.TAuthUserService;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -40,11 +42,22 @@ public class TAuthUserControllerTest {
   @Autowired
   private WebApplicationContext webApplicationContext;
   private MockMvc mockMvc;
+  private static final ObjectMapper mapper = new ObjectMapper();
+  @Autowired
+  private TAuthUserService tAuthUserService;
 
-  @Before
+
+    @Before
   public void setUp() throws Exception{
     //MockMvcBuilders.webAppContextSetup(WebApplicationContext context)：指定WebApplicationContext，将会从该上下文获取相应的控制器并得到相应的MockMvc；
     mockMvc = MockMvcBuilders.webAppContextSetup(webApplicationContext).build();//建议使用这种
+  }
+
+
+  @Test
+  public void  testServiceUser() throws JsonProcessingException {
+      TAuthUser tu=  tAuthUserService.findUserById(101);
+      System.out.println("结果："+mapper.writeValueAsString(tu));
   }
 
 
