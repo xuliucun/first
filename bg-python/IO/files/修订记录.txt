@@ -1,0 +1,55 @@
+/interface/changeRecordList
+请求参数：
+
+{
+    "token": "",
+    "params": {
+        "moduleId": "8e6efb2f93454346a5cb7ec475b7e6bd",
+        "systemId": "a4737a92bd1840a9b1700186019fff8d"
+    },
+    "pageSize": 2,
+    "pageNum": 1
+}
+
+
+返回：
+{
+    "code": 200,
+    "codeDesc": "操作成功",
+    "result": [
+        {
+            "id": 6,
+            "systemId": "a4737a92bd1840a9b1700186019fff8d",
+            "systemName": "ESB系统",
+            "moduleId": "8e6efb2f93454346a5cb7ec475b7e6bd",
+            "moduleName": "员工平台",
+            "interfaceId": "eba0ef2bc4a84961a643973438df4dcb",
+            "interfaceVersionId": "1.2.4",
+            "interfaceVersion": "ESB七月份常规版本",
+            "interfaceNo": "10001",
+            "interfaceName": "测试草稿箱1",
+            "updateTime": "2019-07-25 16:34:38",
+            "updator": "003056ESB",
+            "changeReason": "山东人",
+            "remarks1": null,
+            "remarks2": null
+        },
+        {
+            "id": 5,
+            "systemId": "a4737a92bd1840a9b1700186019fff8d",
+            "systemName": "ESB系统",
+            "moduleId": "8e6efb2f93454346a5cb7ec475b7e6bd",
+            "moduleName": "员工平台",
+            "interfaceId": "eba0ef2bc4a84961a643973438df4dcb",
+            "interfaceVersionId": "",
+            "interfaceVersion": "",
+            "interfaceNo": "10001",
+            "interfaceName": "测试草稿箱1",
+            "updateTime": "2019-07-25 16:24:30",
+            "updator": "钱美琳",
+            "changeReason": null,
+            "remarks1": null,
+            "remarks2": null
+        }
+    ]
+}

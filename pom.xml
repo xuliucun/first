@@ -145,6 +145,7 @@
         <module>bg-common</module>
         <module>bg-sso</module>
         <module>bg-security</module>
+        <module>bg-fbtest</module>
     </modules>
 
 
