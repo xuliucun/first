@@ -1,0 +1,27 @@
+排查步骤：
+1.使用top 定位到占用CPU高的进程PID  ----------进程
+　　top (top是在实时刷新的，可查到pid)
+2.通过ps -ef | grep PID命令  (相当于top的一次快照，瞬时结果)
+　　获取线程信息，并找到占用CPU高的线程
+　　ps -mp PID -o THREAD,tid,time | sort -rn   ----------查进程中的线程
+3.将需要的线程ID转换为16进制格式
+　　printf "%x\n" TID  (可查到线程tid)   -----------转化线程tid为16进制
+4.打印线程的堆栈信息  到了这一步具体看堆栈的日志来定位问题了
+　　jstack PID |grep TID -A 30 (-A 30该tid后的30行日志)
+
+分析：
+wait on monitor entry： 被阻塞的,肯定有问题
+runnable ： 注意IO线程
+in Object.wait()： 注意非线程池等待
+
+
+
+
+扩展：
+频繁GC问题或内存溢出问题
+一、使用jps查看线程ID
+二、使用jstat -gc 3331 250 20 查看gc情况，一般比较关注PERM区的情况，查看GC的增长情况。
+三、使用jstat -gccause 额外输出上次GC原因
+四、使用jmap -dump:format=b,file=heapDump 3331生成堆转储文件
+五、使用jhat或者可视化工具（Eclipse Memory Analyzer 、IBM HeapAnalyzer）分析堆情况。
+六、结合代码解决内存溢出或泄露问题。
